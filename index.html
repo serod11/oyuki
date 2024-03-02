@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,28 +9,34 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
   <title>Best wishes</title>
 </head>
+
 <body>
   <div class="card">
-      <div class="text">
-          <h1>Happy Birthday!</h1>
-          <!-- <p>Happy future</p> -->
-          <div style="height: 20px;"> </div>
-          <p>Here is your present.</p>
-          <p>It is on its way to you from US.</p>
-          <img src="present-box.png" alt="birthday" class="birthday" id="openCard" onclick="myFunction()">
-          <p>It will arrive around 03/22~03/29</p>
-        </div>
-        <div class="space"></div>
-        <div class="credit">Made with <span style="color:tomato">❤</span> by <a  href="https://www.learningrobo.com/">Ser-Od</a></div>
+    <div class="text">
+      <h1>Happy Birthday!</h1>
+      <div style="height: 20px;"> </div>
+      <p>Here is your present.</p>
+      <p>It is on its way to you from US.</p>
+      <img src="present-box.png" alt="birthday" class="birthday" id="openCard" onclick="myFunction()">
+      <p>It will arrive around 03/22~03/29</p>
+    </div>
+    <div class="space"></div>
+    <div class="credit">Made with <span style="color:tomato">❤</span> by <a
+        href="https://www.learningrobo.com/">Ser-Od</a></div>
   </div>
   <div class="dialog">
-   <img src="present.jpg" alt="birthday" class="birthday" id="present">
+    <img src="present.jpg" alt="birthday" class="birthday" id="present" onclick="hide()">
   </div>
   <script>
     function myFunction() {
       const dialog = document.querySelector(".dialog");
       dialog.classList.add('active')
     }
-    </script>
+    function hide() {
+      const dialog = document.querySelector(".dialog");
+      dialog.classList.remove('active');
+    }
+  </script>
 </body>
+
 </html>
