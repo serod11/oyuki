@@ -17,15 +17,19 @@
           <div style="height: 20px;"> </div>
           <p>Here is your present.</p>
           <p>It is on its way to you from US.</p>
-          <img src="present.jpg" alt="birthday" class="birthday" onclick="myFunction()">
+          <img src="present-box.png" alt="birthday" class="birthday" id="openCard" onclick="myFunction()">
           <p>It will arrive around 03/22~03/29</p>
         </div>
         <div class="space"></div>
         <div class="credit">Made with <span style="color:tomato">❤</span> by <a  href="https://www.learningrobo.com/">Ser-Od</a></div>
   </div>
+  <div class="dialog">
+   <img src="present.jpg" alt="birthday" class="birthday" id="present">
+  </div>
   <script>
     function myFunction() {
-      console.log('hohohoho')
+      const dialog = document.querySelector(".dialog");
+      dialog.classList.add('active')
     }
     </script>
 </body>
